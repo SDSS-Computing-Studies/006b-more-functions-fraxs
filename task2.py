@@ -10,8 +10,9 @@ Sample assertions:
 assert largest([3,10,3]) == 10
 """
 
-def largest():
-    pass
-    return
+def largest(numlist):
+    numlist = list(numlist)
+    numlist.sort()
+    return max(numlist)
 
 assert largest([3,10,3]) == 10
